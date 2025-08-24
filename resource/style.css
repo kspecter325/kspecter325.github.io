@@ -1,0 +1,93 @@
+body{
+   margin: 0;
+   border:10px solid #70b8ff;
+}
+header,footer{
+   background-color:#70b8ff;
+   font-size:  15px;
+}
+h1{
+   color: #004aad;
+   margin-left: 5px;
+   margin-top: 10px;
+   font-family: "Trebuchet MS";
+   font-size: 40px;
+}
+p{
+   font-size: 20px;
+}
+progress{
+   width: 100%;
+   height: 30px;
+}
+.content{
+   border: 15px solid #004aad;
+   width: 30%;
+   height: 500px;
+}
+.container{
+   display: flex;
+}
+.head-navi{
+   text-decoration: none;
+   font-size: 20px;
+}
+.footer_img{
+   margin-left: 10px;
+   width: 200px;
+}
+/* Slide */
+/* スライド全体のコンテナ */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+/* 各スライドアイテムの基本スタイル */
+.slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* 表示中のスライドアイテム */
+.slide-item.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* スライド画像 */
+.slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ナビゲーションボタン */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #004aad;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  background-color: black;
+  z-index: 2;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
