@@ -11,7 +11,7 @@ h1{
    margin-left: 5px;
    margin-top: 10px;
    font-family: "Trebuchet MS";
-   font-size: 40px;
+   font-size: 30px;
 }
 p{
    font-size: 20px;
@@ -22,7 +22,7 @@ progress{
 }
 .content{
    border: 15px solid #004aad;
-   width: 30%;
+   width: 20%;
    height: 500px;
 }
 .container{
